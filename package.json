@@ -1,0 +1,25 @@
+{
+  "name": "the-beehive",
+  "version": "1.0.0",
+  "description": "A test project for me to work with NodeJS. I will be setting this up as an app for our \"fantasy\" league",
+  "main": "app/app.js",
+  "scripts": {
+    "start": "node app/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grafmark59/the-beehive.git"
+  },
+  "keywords": [
+    "nodejs",
+    "fantasy",
+    "project"
+  ],
+  "author": "Daniel Graf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/grafmark59/the-beehive/issues"
+  },
+  "homepage": "https://github.com/grafmark59/the-beehive#readme"
+}
