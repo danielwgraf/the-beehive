@@ -4,17 +4,20 @@ var router = express.Router();
 router.get('/players', function(req, res) {
   var data = req.app.get('appData');
   var pagePhotos = [];
+  var pageTeams = [];
   var pagePlayers = data.seasons.seventeen.players;
 
-  // data.speakers.forEach(function(item) {
-  //   pagePhotos = pagePhotos.concat(item.artwork);
-  // });
+
+  data.seasons.seventeen.players.forEach(function(item) {
+    item.teams.forEach(function(team) {
+      pageTeams = pageTeams.concat(team);
+    });
+  });
 
   res.render('players', {
     pageTitle: 'Players',
-    artwork: pagePhotos,
     players: pagePlayers,
-    teams: [],
+    teams: pageTeams,
     pageID: 'playerList'
   });
 });
@@ -22,20 +25,23 @@ router.get('/players', function(req, res) {
 router.get('/players/:playerid', function(req, res) {
   var data = req.app.get('appData');
   var pagePhotos = [];
+  var pageTeams = [];
   var pagePlayers = [];
 
   data.seasons.seventeen.players.forEach(function(item) {
-    if (item.shortname == req.params.speakerid) {
+    if (item.shortName == req.params.playerid) {
       pagePlayers.push(item);
-      // pagePhotos = pagePhotos.concat(item.artwork);
+      // pageTeams = pagePlayers.teams;
+      item.teams.forEach(function(team) {
+        pageTeams = pageTeams.concat(team);
+      })
     }
   });
 
   res.render('players', {
     pageTitle: 'Player Info',
-    artwork: pagePhotos,
     players: pagePlayers,
-    teams: [],
+    teams: pageTeams,
     pageID: 'playerDetail'
   });
 });

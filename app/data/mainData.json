@@ -3,6 +3,7 @@
     "seventeen": {
       "players": [
         {
+          "name": "Daniel Graf",
           "firstName": "Daniel",
           "lastName": "Graf",
           "shortName": "Daniel_Graf",
@@ -18,6 +19,7 @@
           ]
         },
         {
+          "name": "Jon Becerril",
           "firstName": "Jon",
           "lastName": "Becerril",
           "shortName": "Jon_Becerril",
@@ -33,6 +35,7 @@
           ]
         },
         {
+          "name": "Leo Cervantes",
           "firstName": "Leo",
           "lastName": "Cervantes",
           "shortName": "Leo_Cervantes",
@@ -48,6 +51,7 @@
           ]
         },
         {
+          "name": "Mohin Banker",
           "firstName": "Mohin",
           "lastName": "Banker",
           "shortName": "Mohin_Banker",
