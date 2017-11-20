@@ -4,7 +4,7 @@
   "description": "A test project for me to work with NodeJS. I will be setting this up as an app for our \"fantasy\" league",
   "main": "app/app.js",
   "scripts": {
-    "start": "node app/app.js",
+    "start": "nodemon -e css,ejs,js,json --watch app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,11 @@
   ],
   "author": "Daniel Graf",
   "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.4.2",
+    "express": "^4.14.0",
+    "reload": "^1.0.0"
+  },
   "bugs": {
     "url": "https://github.com/grafmark59/the-beehive/issues"
   },

@@ -1,0 +1,85 @@
+// /*====================================
+// =            Footer Style            =
+// ====================================*/
+//
+.footer {
+  height: 25%;
+  background: black;
+  color: white;
+
+  flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  .icons {
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+    margin-bottom: 2em;
+    display: inline-block;
+
+    li {
+      display: inline-block;
+      padding-right: 2.5em;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    a {
+      -moz-transition: all .2s ease-in;
+      -o-transition: all .2s ease-in;
+      -webkit-transition: all .2s ease-in;
+      transition: all .2s ease-in;
+
+      text-decoration: none;
+      color: rgb(82, 86, 89);
+      border: 2px solid #999;
+      border-radius:50%;
+      text-align: center;
+      display: inline-block;
+      width: 55px;
+      height: 55px;
+      line-height: 60px;
+
+      .fa {
+        font-size: 1.6em;
+      }
+
+      &:hover,
+      &:active {
+        color: #fff;
+        border-color: transparent;
+
+        &.icon {
+          background-color:#FBD516;
+        }
+
+        &.icon-search {
+          background-color: white;
+        }
+        &.icon-email {
+          background-color: grey;
+        }
+        &.icon-github {
+          background-color: #222;
+        }
+        &.icon-facebook {
+          background-color: #3765A3;
+        }
+        &.icon-twitter {
+          background-color: #5EA9DD;
+        }
+        &.icon-instagram {
+          background-color: #323232;
+        }
+        &.icon-linkedin {
+          background-color: #0274B3;
+        }
+      }
+    }
+  }
+}
