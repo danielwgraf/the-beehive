@@ -1,0 +1,69 @@
+{
+  "seasons": {
+    "seventeen": {
+      "players": [
+        {
+          "firstName": "Daniel",
+          "lastName": "Graf",
+          "shortName": "Daniel_Graf",
+          "teams": [
+            "Bengals",
+            "Bills",
+            "Broncos",
+            "Colts",
+            "Cowboys",
+            "Eagles",
+            "Panthers",
+            "Patriots"
+          ]
+        },
+        {
+          "firstName": "Jon",
+          "lastName": "Becerril",
+          "shortName": "Jon_Becerril",
+          "teams": [
+            "49rs",
+            "Browns",
+            "Chiefs",
+            "Dolphins",
+            "Lions",
+            "Redskins",
+            "Seahawks",
+            "Texans"
+          ]
+        },
+        {
+          "firstName": "Leo",
+          "lastName": "Cervantes",
+          "shortName": "Leo_Cervantes",
+          "teams": [
+            "Cardinals",
+            "Giants",
+            "Jets",
+            "Raiders",
+            "Rams",
+            "Ravens",
+            "Steelers",
+            "Vikings"
+          ]
+        },
+        {
+          "firstName": "Mohin",
+          "lastName": "Banker",
+          "shortName": "Mohin_Banker",
+          "teams": [
+            "Bears",
+            "Buccaneers",
+            "Chargers",
+            "Falcons",
+            "Jaguars",
+            "Packers",
+            "Saints",
+            "Titans"
+          ]
+        }
+
+      ]
+    }
+  }
+}

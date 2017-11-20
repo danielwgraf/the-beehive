@@ -1,0 +1,11 @@
+<article class="sidebar">
+  <h1 class="sidebar-title">Teams</h1>
+  <p class="sidebar-body">List of Teams</p>
+  <div class="pixgrid clearfix">
+    <% if (teams.length > 0) { %>
+    <% for (i=0; i< teams.length; i++) { %>
+        <h3><%= teams[i] %></h3>
+    <% } %>
+    <% } %>
+  </div>
+</article>

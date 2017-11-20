@@ -21,7 +21,8 @@
   "dependencies": {
     "ejs": "^2.4.2",
     "express": "^4.14.0",
-    "reload": "^1.0.0"
+    "reload": "^1.0.0",
+    "serve-favicon": "^2.4.5"
   },
   "bugs": {
     "url": "https://github.com/grafmark59/the-beehive/issues"
