@@ -15,6 +15,9 @@ app.locals.allCurrentPlayers = dataFile.seasons.seventeen.players;
 app.use(express.static('app/public'));
 app.use(require('./routes/index'));
 app.use(require('./routes/players'));
+app.use(require('./routes/about'));
+app.use(require('./routes/teams'));
+app.use(require('./routes/standings'));
 app.use(favicon(__dirname + '/public/images/misc/beehive/favicon.ico'));
 
 

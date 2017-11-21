@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', function(req, res) {
+router.get('/about', function(req, res) {
   var data = req.app.get('appData');
   var pageTeams = [];
   var pagePlayers = data.seasons.seventeen.players;
@@ -12,11 +12,11 @@ router.get('/', function(req, res) {
     });
   });
 
-  res.render('index', {
-    pageTitle: 'Home',
+  res.render('about', {
+    pageTitle: 'About',
     players: pagePlayers,
-    teams: pageTeams.sort(),
-    pageID: 'home'
+    teams: pageTeams,
+    pageID: 'about'
   });
 
 });
