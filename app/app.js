@@ -9,8 +9,17 @@ app.set('appData', dataFile);
 app.set('view engine', 'ejs');
 app.set('views', 'app/views');
 
+var allTeams = [];
+
+dataFile.seasons.seventeen.players.forEach(function(item) {
+  item.teams.forEach(function(team) {
+    allTeams = allTeams.concat(team);
+  });
+});
+
 app.locals.siteTitle = 'The Beehive';
 app.locals.allCurrentPlayers = dataFile.seasons.seventeen.players;
+app.locals.allTeams = allTeams;
 
 app.use(express.static('app/public'));
 app.use(require('./routes/index'));

@@ -3,7 +3,7 @@
   <p class="sidebar-body">List of Teams</p>
   <% if (teams.length > 0) { %>
   <% for (i=0; i< teams.length; i++) { %>
-      <h5><a><%= teams[i] %></a></h5>
+      <h5><a href="/teams/<%= teams[i].toLowerCase() %>"><%= teams[i] %></a></h5>
   <% } %>
   <% } %>
 </article>
