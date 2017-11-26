@@ -4,9 +4,10 @@
 <script src="https://use.fontawesome.com/ededb13e1f.js"></script>
 <script src="/js/scripts.js"></script>
 
-<!-- <% if(typeof artwork !== "undefined") { %>
-  <script src="/js/pixgrid.js"></script>
-<% } %> -->
+<% if (pageID == 'standings') { %>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <% include js/powerRankingGraph.ejs %>
+<% } %>
 
 
 <script src="/reload/reload.js"></script>
