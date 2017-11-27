@@ -1,0 +1,15 @@
+// /*====================================
+// =            Sidebar Style            =
+// ====================================*/
+//
+.sidebar-list {
+  height:100vh;
+  overflow:auto;
+  border-left: 6px solid darken(#FBD516, 15%);
+  padding-left: 6px;
+  background-color: #FBD516;
+  a {
+    color: black;
+    font-weight: bold;
+  }
+}

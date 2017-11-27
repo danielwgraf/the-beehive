@@ -1,0 +1,17 @@
+// /*====================================
+// =            Graph Style            =
+// ====================================*/
+//
+
+.graphWrapper {
+  // padding: 150px;
+  // margin: 30px;
+  background: #FFF; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #FFF 50%, #000 75%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(50%,#FFF), color-stop(75%,#000)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #FFF 50%,#000 75%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #FFF 50%,#000 75%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #FFF 50%,#000 75%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #FFF 50%,#000 75%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

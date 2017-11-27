@@ -1,9 +1,13 @@
 <article class="sidebar">
   <h1 class="sidebar-title">Teams</h1>
   <p class="sidebar-body">List of Teams</p>
+  <div>
+
   <% if (teams.length > 0) { %>
+    <div class="sidebar-list">
   <% for (i=0; i< teams.length; i++) { %>
       <h5><a href="/teams/<%= teams[i].toLowerCase() %>"><%= teams[i] %></a></h5>
   <% } %>
+    </div>
   <% } %>
 </article>

@@ -1,0 +1,11 @@
+.sidebar-list {
+  height: 100vh;
+  overflow: auto;
+  border-left: 6px solid #c1a203;
+  padding-left: 6px;
+  background-color: #FBD516; }
+  .sidebar-list a {
+    color: black;
+    font-weight: bold; }
+
+/*# sourceMappingURL=sidebar.css.map */
